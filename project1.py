@@ -28,6 +28,8 @@ function-
 display
 warning for stock
 """
+#it is same as we do in lists or sets put input function inside loop and it will work as access-key.
+#
 def add_items():#i dont think this is needed to be converted to dictionary
     add_option_catagery = input("ENTER THE NAME OF THE ITEM YOU WANT TO ADD IN THE STOCK:")
     add_option_size = input("ENTER THE SIZE OF THE APPEREL:")
@@ -66,10 +68,25 @@ class Apperel_shop():
 """use dictionary->
 apperel = [{}]
 print(apperel[input])"""
-apperel_dict = [
-        {"Type":["T-shirt", "Jacket", "Shirt"]},
-        { "Size":["Small, Medium, Large"]},
-        {"colour":["Red", "Blue", "Yellow"]}
+dict-1 = [
+        {"Type":"T-shirt", "Size":"Small", "Colour":"Red"},
+        {"Type":"Shirt", "Size":"Small", "Colour":"Red"},
+        {"Type":"Jacket", "Size":"Small", "Colour":"Red"}
                 ]
+dict_2 = [
+    {"Type":"T-shirt", "Size":"Medium", "Colour":"Blue"},
+    {"Type":"Shirt", "Size":"Medium", "Colour":"Blue"},
+    {"Type":"Jacket", "Size":"Medium", "Colour":"Blue"}
+]
+dict_3 = [
+    {"Type":"T-shirt", "Size":"Large", "Colour":"White"},
+    {"Type":"T-shirt", "Size":"Large", "Colour":"White"},
+    {"Type":"Jacket", "Size":"Large", "Colour":"White"}
+]
+
+dict_4 = dict_1.update(dict_2)
+apperel_dict = dict_4.update(dict_3)
+
 print (list(apperel_dict))
+
 input("THANK YOU COME AGAIN!!")
