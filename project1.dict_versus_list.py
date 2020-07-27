@@ -2,19 +2,19 @@ category = ["Tshirt", "Shirt", "Jacket"]
 size_1 = ["Small"]
 size_2 = ["Medium"]
 size_3 = ["Large"]
-size = []
-size_1.append(size)
-size_2.append(size)
-size_3.append(size)
+size = list[input("ENTER THE SIZE:")]
+size.append(size_1)
+size.append(size_2)
+size.append(size_3)
 colour_1 = ["Red"]
 colour_2 = ["Green"]
 colour_3 = ["Blue"]
-colour = []
-colour_1.append(colour)
-colour_2.append(colour)
-colour_3.append(colour)
+colour = list[input("ENTER THE COLOUR:")]
+colour.append(colour_1)
+colour.append(colour_2)
+colour.append(colour_3)
 
-user_input =list[input("ENTER THE ITEM NAME:")]
+user_input =[input("ENTER THE ITEM NAME:")]
 Type=[]
 user_input.append(Type)
 
@@ -25,6 +25,7 @@ apperel = {
     size: size_3[i],
     colour: colour_1[i],
     colour: colour_2[i],
-    colour: colour_3[i],
-    for i in category and size and colour:}
+    colour: colour_3[i]
+    for i in range(len(category and size and colour)):
+        }
 print(apperel)
