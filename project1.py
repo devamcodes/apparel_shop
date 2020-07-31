@@ -45,13 +45,13 @@ def remove_item():#(continue)if this is for puchase purpose.
 
 def remove_from_the_stock():#how to connect this with the stock dictionary
     if method == 1:
-    remove_option_catagery = input("ENTER THE NAME OF THE ITEM YOU WANT TO REMOVE:")
+        remove_option_catagery = input("ENTER THE NAME OF THE ITEM YOU WANT TO REMOVE:")
     elif method == 2:
-    remove_option_size = input("ENTER THE SIZE OF THE APPEREL YOU WANT TO REMOVE")
+        remove_option_size = input("ENTER THE SIZE OF THE APPEREL YOU WANT TO REMOVE")
     elif method == 3:
-    remove_option_colour = input("ENTER THE COLOUR OF THE APPEREL YOU WANT TO REMOVE:")
+        remove_option_colour = input("ENTER THE COLOUR OF THE APPEREL YOU WANT TO REMOVE:")
     else:
-    print("INVALID INPUT.")
+        print("INVALID INPUT.")
 
 def display_stock():
 
@@ -68,25 +68,28 @@ class Apperel_shop():
 """use dictionary->
 apperel = [{}]
 print(apperel[input])"""
-dict-1 = [
+apperel_1 = [
         {"Type":"T-shirt", "Size":"Small", "Colour":"Red"},
         {"Type":"Shirt", "Size":"Small", "Colour":"Red"},
         {"Type":"Jacket", "Size":"Small", "Colour":"Red"}
                 ]
-dict_2 = [
+apperel_2 = [
     {"Type":"T-shirt", "Size":"Medium", "Colour":"Blue"},
     {"Type":"Shirt", "Size":"Medium", "Colour":"Blue"},
     {"Type":"Jacket", "Size":"Medium", "Colour":"Blue"}
 ]
-dict_3 = [
-    {"Type":"T-shirt", "Size":"Large", "Colour":"White"},
-    {"Type":"T-shirt", "Size":"Large", "Colour":"White"},
-    {"Type":"Jacket", "Size":"Large", "Colour":"White"}
+apperel_3 = [
+    {"Type": "T-shirt", "Size": "Large", "Colour": "White"},
+    {"Type": "Shirt", "Size": "Large", "Colour": "White"},
+    {"Type": "Jacket", "Size": "Large", "Colour": "White"}
 ]
 
-dict_4 = dict_1.update(dict_2)
-apperel_dict = dict_4.update(dict_3)
+apperel_4 = apperel_1.append(apperel_2)
+apperel_dict = apperel_3.append(apperel_4)
 
-print (list(apperel_dict))
+print(apperel_dict)
+user_type = input("")
+if user_type == apperel_dict:
+    print(user_type)
 
 input("THANK YOU COME AGAIN!!")
